@@ -3,7 +3,7 @@ bool days31(int m){
 	return (((m<=7)&&(m%2!=0)) || ((m>=8) && (m%2==0)));
 }
 bool days30(int m){
-	 return ((m!=2) && (!days31));
+	 return ((m!=2) && (!days31(m)));
 }
 bool checkleap(int y){
 	return ((y%4==0) && ((y%100!=0) || (y%400==0)));
